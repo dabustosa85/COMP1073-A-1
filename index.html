@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>See ‘N’ Say Story Maker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/game.js" defer></script>
+</head>
+<body class="antialiasing bg-yellow-300">
+<div class="container mx-auto px-4 pt-5">
+    <div class="grid sm:grid-cols-5 grid-cols-2 gap-4 divider-y">
+        <div class="overflow-hidden bg-purple-300 shadow sm:rounded-md">
+            <ul id="firstNouns"  class="divide-y divide-purple-200">
+                <li class="text-center py-5 bg-purple-500 font-bold">
+                    Noun 1
+                </li>
+                <li class="bg-slate-400">
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">The Turkey</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Mom</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Dad</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">The Dog</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">My Teacher</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">The Elephant</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">The Cat</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <button id="selectFirstNoun" class="block w-full text-center py-4 font-medium text-purple-700 bg-purple-100 hover:bg-purple-200">Click to Select Adjective</button>
+            </div>
+        </div>
+        <div class="overflow-hidden bg-sky-300 shadow sm:rounded-md">
+            <ul id="verbs"  class="divide-y divide-sky-200">
+                <li class="text-center py-5 bg-sky-500 font-bold">
+                    Verb
+                </li>
+                <li class="bg-slate-400">
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Sat On</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Ate</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Dance With</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Saw</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Doesn't Like</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Kissed</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Play</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <button id="selectVerb" class="block w-full text-center py-4 font-medium text-sky-700 bg-sky-100 hover:bg-sky-200">Click to Select Adjective</button>
+            </div>
+        </div>
+        <div class="overflow-hidden bg-green-300 shadow sm:rounded-md">
+            <ul id="adjectives"  class="divide-y divide-green-200">
+                <li class="text-center py-5 bg-green-400 font-bold">
+                    Adjective
+                </li>
+                <li class="bg-slate-400">
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">A Funny</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">A Scary</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">A Goofy</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">A Slimy</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">A Barking</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">A Fat</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">A Big</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <button id="selectAdjective" class="block w-full text-center py-4 font-medium text-green-700 bg-green-100 hover:bg-green-200">Click to Select Adjective</button>
+            </div>
+        </div>
+        <div class="overflow-hidden bg-orange-300 shadow sm:rounded-md">
+            <ul id="secondNouns"  class="divide-y divide-orange-200">
+                <li class="text-center py-5 bg-orange-400 font-bold">
+                    Noun 2
+                </li>
+                <li class="bg-slate-400">
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Goat</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Monkey</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Fish</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Cow</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Frog</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Bug</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">Worm</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <button id="selectSecondNoun" class="block w-full text-center py-4 font-medium text-orange-700 bg-orange-100 hover:bg-orange-200">Click to Select Adjective</button>
+            </div>
+        </div>
+        <div class="overflow-hidden bg-pink-300 shadow sm:rounded-md">
+            <ul id="settings"  class="divide-y divide-pink-200">
+                <li class="text-center py-5 bg-pink-400 font-bold">
+                    Setting
+                </li>
+                <li class="bg-slate-400">
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">On the Moon</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">On the Chair</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">In my Spaghetti</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">In my Soup</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">On the Grass</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">In my Shoes</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="flex">
+                                <p class="truncate font-medium">In the Floor</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <button id="selectSetting" class="block w-full text-center py-4 font-medium text-pink-700 bg-pink-100 hover:bg-pink-200">Click to Select Adjective</button>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-5">
+        <span class="isolate inline-flex rounded-md shadow-sm">
+          <button id="actionPlayback" type="button" class="relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-4 py-2 text-2xl font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500">Playback</button>
+          <button id="actionSurprise" type="button" class="relative -ml-px inline-flex items-center rounded-r-md border border-gray-300 bg-white px-4 py-2 text-2xl font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500">Surprise</button>
+        </span>
+    </div>
+
+    <div class="py-3 mt-5">
+        <div class="border bg-white rounded-3xl p-5 text-center">
+            <p id="story" class="text-2xl font-bold">(Press Playback or Surprise)</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
